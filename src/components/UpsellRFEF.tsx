@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import rfefBookWebp from '../assets/rfef-book.webp';
-import rfefBookPng from '../assets/rfef-book.png';
+import { RFEF_BOOK_IMAGE } from '../assets/rfefBookDataUri';
 import { 
   ShieldCheck, 
   BookOpen, 
@@ -152,26 +151,23 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           {/* Mockup (Visual Highlight) */}
           <div className="w-full flex flex-col items-center justify-center">
             <div className="relative group overflow-hidden rounded-xl bg-slate-950 p-1.5 border border-slate-800 shadow-[0_15px_30px_rgba(0,0,0,0.6)] w-full max-w-[560px] flex items-center justify-center">
-              <picture className="w-full flex items-center justify-center">
-                <source srcSet={rfefBookWebp} type="image/webp" />
-                <img 
-                  src={rfefBookWebp || rfefBookPng} 
-                  alt="Estrategias y Tácticas en Fútbol Sala - RFEF" 
-                  className="w-full h-auto max-h-[520px] object-contain rounded-lg transition-transform duration-300 group-hover:scale-105 block"
-                  loading="eager"
-                  // @ts-ignore
-                  fetchPriority="high"
-                  decoding="async"
-                  width={640}
-                  height={512}
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    if (target.src !== FALLBACK_CDN_IMG) {
-                      target.src = FALLBACK_CDN_IMG;
-                    }
-                  }}
-                />
-              </picture>
+              <img 
+                src={RFEF_BOOK_IMAGE} 
+                alt="Estrategias y Tácticas en Fútbol Sala - RFEF" 
+                className="w-full h-auto max-h-[520px] object-contain rounded-lg transition-transform duration-300 group-hover:scale-105 block"
+                loading="eager"
+                // @ts-ignore
+                fetchPriority="high"
+                decoding="sync"
+                width={640}
+                height={512}
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== FALLBACK_CDN_IMG) {
+                    target.src = FALLBACK_CDN_IMG;
+                  }
+                }}
+              />
             </div>
           </div>
 
