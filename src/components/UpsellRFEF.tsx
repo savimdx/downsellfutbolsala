@@ -140,7 +140,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500">
               Sesiones Tácticas de Élite
             </span> <br />
-            por solo <span className="text-orange-400 underline decoration-amber-500/50 decoration-2">U$4,90</span>?
+            por solo <span className="text-orange-400 underline decoration-amber-500/50 decoration-2">5,20 €</span>?
           </h1>
           <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-medium">
             Entendemos que el precio anterior podía ser un obstáculo. Por eso, hemos rebajado el material oficial al <span className="text-amber-400 font-bold">precio mínimo de costo</span>. No volverás a ver esta oportunidad jamás.
@@ -207,10 +207,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             <div className="pt-6 border-t border-slate-800 flex flex-col items-center justify-center gap-4 text-center bg-slate-950/40 p-4 rounded-xl border border-slate-850">
               <div className="flex flex-col items-center justify-center gap-1.5 bg-orange-500/10 border-2 border-orange-500/60 px-4 sm:px-8 py-5 rounded-2xl w-full max-w-md shadow-[0_0_25px_rgba(249,115,22,0.25)]">
                 <span className="text-xs text-orange-400 uppercase tracking-widest font-black">OFERTA FINAL:</span>
-                <span className="text-5xl sm:text-6xl md:text-7xl font-black text-orange-400 font-mono tracking-tight whitespace-nowrap [webkit-text-stroke:2.5px_currentColor] sm:[webkit-text-stroke:4px_currentColor] drop-shadow-[0_2px_4px_rgba(249,115,22,0.4)]">U$4,90</span>
-                <span className="text-xs sm:text-sm font-bold text-amber-300 flex items-center justify-center gap-1">
-                  <span>💳</span> Puede pagar en tu moneda local
-                </span>
+                <span className="text-5xl sm:text-6xl md:text-7xl font-black text-orange-400 font-mono tracking-tight whitespace-nowrap [webkit-text-stroke:2.5px_currentColor] sm:[webkit-text-stroke:4px_currentColor] drop-shadow-[0_2px_4px_rgba(249,115,22,0.4)]">5,20 €</span>
                 <span className="text-[10px] text-slate-400 uppercase font-mono tracking-wider text-center">Pago único • Acceso de descarga inmediato</span>
               </div>
             </div>
@@ -227,7 +224,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
               ¿Listo para dar el gran salto táctico por una fracción de su costo?
             </h4>
             <p className="text-xs text-slate-400 max-w-md mx-auto">
-              Solo haz clic abajo para añadir este material exclusivo a tu pedido. El cargo de U$4,90 se procesará de forma segura.
+              Solo haz clic abajo para añadir este material exclusivo a tu pedido. El cargo de 5,20 € se procesará de forma segura.
             </p>
           </div>
 
